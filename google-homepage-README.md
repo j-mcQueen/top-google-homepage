@@ -1,0 +1,1 @@
+This project is a deconstruction and rebuild of Google's homepage. For now, all links and forms are inactive since this project is meant to test my HTML and CSS skills. The project specifically says not to be a perfectionist right now, and to make the page look like Google's homepage only.
