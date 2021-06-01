@@ -2,7 +2,7 @@
 
 html {
     font-size: 10px;
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -90,11 +90,32 @@ ul {
 /* main styles */
 
 main {
+    display: grid;
     height: calc(100vh - 103px);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 1fr;
 }
 
 input:focus {
     outline: none;
+}
+
+#logo-wrapper {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    width: 100%;
+}
+
+#google-logo {
+    width: auto;
+}
+
+form {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 #search-wrapper-1 {
@@ -110,7 +131,7 @@ input:focus {
     align-items: center;
     border-radius: 50px;
     border: 1px solid #dfe1e5;
-    width: 32%;
+    width: 60%;
 }
 
 #search-wrapper-2:hover {
@@ -120,24 +141,50 @@ input:focus {
 #search-icon {
     display: flex;
     color: #9AA0A6;
-    padding-right: 13px;
 }
 
 #search-icon svg {
     width: 20px;
     height: 20px;
     fill: currentColor;
+    padding-right: 13px;
 }
 
 #search-field {
     width: 88%;
     border: none;
-    padding: 15px 0;
+    padding: 13px 0 13px 0;
+    border-radius: 50px;
 }
 
 #buttons-wrapper {
     display: flex;
     justify-content: center;
+}
+
+#buttons-wrapper button {
+    font-family: 'Open Sans', sans-serif;
+    color: #5f6368;
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#buttons-wrapper button:hover {
+    border: 1px solid #c6c6c6;
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+#search-button {
+    padding: 8px 17px;
+    margin-right: 5px;
+}
+
+#ifl {
+    padding: 8px 17px;
+    margin-left: 5px;
 }
 
 /* footer styles */
