@@ -1,3 +1,5 @@
+/* general/ top-level styles */
+
 html {
     font-size: 10px;
     font-family:'Open Sans', sans-serif;
@@ -23,6 +25,8 @@ body {
     margin: 0;
     box-sizing: border-box;
 }
+
+/* nav styles */
 
 nav {
     display: flex;
@@ -82,6 +86,8 @@ ul {
 #sign-in:hover {
     box-shadow: 0 0 2px #2b7de9;
 }
+
+/* footer styles */
 
 footer {
     display: flex;
