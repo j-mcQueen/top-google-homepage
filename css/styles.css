@@ -101,13 +101,12 @@ input:focus {
 }
 
 #logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     grid-column: 2 / 3;
     grid-row: 1;
     width: 100%;
-}
-
-#google-logo {
-    width: auto;
 }
 
 form {
